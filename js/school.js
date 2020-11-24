@@ -37,7 +37,7 @@ function fllexnav(obj){
       $("body,html").animate({scrollTop:mainTopArr[i]},300);
   })
   $(".schoolflex .top").click(function(){
-      $("body,html").animate({scrollTop:0},400);
+      $("body,html").animate({scrollTop:mainTopArr[0]},400);
   })
 }
 if($(".schoolflex").size()>=1){ fllexnav($(".schoolflex ul li")) }

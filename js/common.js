@@ -1,3 +1,31 @@
+//页面左右划动
+function HomeScroll(a, b) {
+  function g() {
+      var g = $(window).scrollLeft()
+          , h = $(window).scrollTop()
+          , i = $(document).height()
+          , j = $(window).height()
+          , k = c.height()
+          , l = d.height()
+          , m = k > l ? f : e
+          , n = k > l ? d : c
+          , o = k > l ? c.offset().left + c.outerWidth(!0) - g : d.offset().left - c.outerWidth(!0) - g
+          , p = k > l ? l : k
+          , q = k > l ? k : l
+          , r = parseInt(q - j) - parseInt(p - j);
+      $(a + "," + b).removeAttr("style"),
+          j > i || p > q || m > h || p - j + m >= h ? n.removeAttr("style") : j > p && h - m >= r || p > j && h - m >= q - j ? n.attr("style", "margin-top:" + r + "px;") : n.attr("style", "_margin-top:" + (h - m) + "px;position:fixed;left:" + o + "px;" + (j > p ? "top" : "bottom") + ":0;")
+  }
+  if ($(a).length > 0 && $(b).length > 0) {
+      var c = $(a)
+          , d = $(b)
+          , e = c.offset().top
+          , f = d.offset().top;
+      $(window).resize(g).scroll(g).trigger("resize")
+  }
+}
+HomeScroll(".Cont_L", ".Cont_R");
+
 //声明插件
 layui.use(['element','form'], function(){
   var headernav = layui.element; //  导航
@@ -37,3 +65,7 @@ function Collection(obj){
   }
    
 }
+// 点击到顶部
+$(".Feedbackfixed .top").click(function(){
+  $("body,html").animate({scrollTop:0},400);
+})
