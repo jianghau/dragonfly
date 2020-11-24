@@ -1,0 +1,565 @@
+.commont{
+  padding: 0;
+  background: #fafafa;
+}
+.Cont_L{
+  width: 825px;
+  margin-right: 35px;
+}
+.Cont_R{
+  width: 340px;
+}
+.school_hometop{
+  border-bottom: 1px solid #f1f1f1;
+  background: #fff;
+  min-height: 250px;
+  padding-top: 30px;
+  .schoolname{
+    padding-right: 300px;
+    position: relative;
+    .schoolimg{
+      height: 95px;
+      width: 95px;
+      float: left;
+      padding: 27px 10px 10px;
+      .img{
+        width: 100%;
+        height: 100%;
+        
+      }
+    }
+    .infor{
+      float: left;
+      width: 740px;
+      padding-left: 30px;
+      position: relative;
+      .ptop{
+        line-height: 35px;
+        width: 100%;
+        position: relative;
+        height: 62px;
+        .h1{
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 240px;
+          overflow: hidden;
+          font-size: 24px;
+          font-weight: normal;
+          padding-top: 27px;
+          height: 35px;
+        }
+        .tis{
+          display: inline-block;
+          vertical-align: middle;
+          color: #515151;
+          font-size: 14px;
+          padding-top: 27px;
+          position: relative;
+          max-width: 200px;
+          overflow: hidden;
+          height: 35px;
+        }
+        .lab{
+          position: absolute;
+          height: 20px;
+          font-size: 12px;
+          line-height: 20px;
+          color: #c24300;
+          background: #fce1bd;
+          padding: 0 5px;
+          border-radius: 3px;
+          top: 3px;
+          left: 10px;
+          
+          &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0px;
+            bottom: -5px;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #fce1bd;
+          }
+        }
+        .layui-form{
+          display: inline-block;
+          vertical-align: middle;
+          padding-top: 27px;
+          height: 35px;
+          margin: 0 10px;
+          .layui-form-item .layui-input-inline{
+            width: 150px;
+          }
+        }
+        .Colle{
+          display: inline-block;
+          vertical-align: middle;
+          padding-top: 27px;
+          height: 35px;
+          line-height: 35px;
+          color: #7a7a7a;
+          cursor: pointer;
+          .icoColle{
+            height:18px;width:22px;background-position: -371px 0;
+            display: inline-block;
+            vertical-align: middle;
+            margin: -1px 8px 0 0;
+          }
+        }
+        .Colle.on{
+          .icoColle{
+            background-position: -339px 0;
+          }
+        }
+      }
+      .dizhi{
+        padding-top: 5px;
+       .p{
+        height: 30px;
+        line-height: 30px;
+        color: #515151;
+        width: 100%;
+        overflow: hidden;
+        span{
+          color: #0172ce;
+          padding: 0 5px;
+        }
+       }
+      }
+      .lablis{
+        height: 20px;
+        line-height: 20px;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 10px;
+        .lab_{
+          float: left;
+          background: #fff1ea;
+          padding: 0 15px;
+          overflow: hidden;
+          color: #e49a72;
+          margin-right: 10px;
+          border-radius: 10px;
+        }
+      }
+      .lis{
+        width: 100%;
+        height: 80px;
+        line-height: 40px;
+        color: #515151;
+        padding-top: 10px;
+        p{
+          float: left;
+          width: 250px;
+          margin-right: 5px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          height: 40px;
+          i{
+            display: inline-block;
+            vertical-align: middle;
+            margin: -2px 5px 0 ;
+          }
+          .ico1{height:16px;width:18px;background-position: -273px -33px;}
+          .ico2{height:19px;width:14px;background-position: -219px -31px;}
+          .ico3{height:15px;width:19px;background-position: -303px -33px}
+          .ico4{height:17px;width:17px;background-position: -241px -33px;}
+          .ico5{height:18px;width:20px;background-position: -332px -31px;}
+        }
+        .p2{
+          width: 400px;
+        }
+      }
+    
+    }
+    .saolimg{
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      width: 263px;
+      .line1{
+        background: url("../images/saoimli1.png") no-repeat center;
+        position: relative;
+        width: 263px;
+        height: 14px;
+      }
+      .line2{
+       background: url("../images/saoimli1.png") no-repeat center;
+       position: absolute;
+       width: 263px;
+       height: 14px;
+       top: 0px;
+       left: 0;
+       z-index: 2;
+     }
+     .img{
+       width: 130px;
+       height: 130px;
+       margin: 0 auto;
+       margin-top: -11px;
+       position: relative;
+       z-index: 1;
+
+     }
+     .font{
+       height: 50px;
+       line-height: 25px;
+       text-align: center;
+       color: #515151;
+     }
+   }
+  }
+}
+.schoolnav{
+  height: 84px;
+  background: #fff;
+  box-shadow: 0px 20px 20px rgba(254, 120, 48, 0.1);
+  line-height: 84px;
+  margin-bottom: 20px;
+  li{
+    float: left;
+    padding:0 15px;
+    min-width: 100px;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    a{
+      color: #000;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover{
+      background: #fff8f4;
+    }
+  }
+  .on{
+    background: #fff8f4;
+    color: #fe7830;
+    font-weight: bold;
+    a{
+      color: #fe7830;
+    }
+  }
+}
+.schoollab{
+  width: 100%;
+  padding: 20px 0;
+  height: 200px;
+  .img{
+    float: left;
+    height: 200px;
+    width: 400px;
+
+  }
+  .infor{
+    width: 775px;
+    float: left;
+    padding-left: 25px;
+    overflow: hidden;
+    p{
+      line-height: 32px;
+      color: #515151;
+      font-size: 16px;
+      text-align: justify;
+      display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; word-break: break-all;   
+      height: 165px;  
+      width: 100%;
+      overflow: hidden;
+    }
+    .more{
+      color: #fe7830;
+      font-size: 15px;
+      text-decoration: underline;
+      padding-top: 15px;
+    }
+  }
+  
+
+}
+.schoolitem{
+  color: #515151;
+  font-size: 15px;
+  line-height: 38px;
+  width: 690px;
+  a{
+    color: #fe7830;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  ul{
+    padding: 10px 0;
+    li{
+      &::before{
+        content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin: -2px 8px 0 0;
+          width: 2px;
+          height: 2px;
+          background: #515151;
+          border-radius: 50%;
+      }
+      .a{
+        display: inline-block;
+        vertical-align: middle;
+        margin: -2px 10px 0 0;
+        max-width: 400px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #515151;
+        &:hover{
+          color: #fe7830;
+        }
+      }
+      span{
+        color: #0172ce;
+        font-size: 13px;
+      }
+    }
+  }
+  .text{
+    padding: 10px 0;
+    a{
+      color: #fe7830;
+    }
+    .lab{
+      display: inline-block;
+      vertical-align: middle;
+      background: #faeae1;
+        padding: 0 15px;
+        overflow: hidden;
+        color: #e49b73;
+        margin-right: 10px;
+        border-radius: 20px;
+        height: 26px;
+        line-height: 26px;
+    }
+  }
+  .lis{
+    padding: 20px 0 10px 0;
+    .namebt{
+       height: 40px;
+       line-height: 40px;
+       width: 100%;
+       display: block;
+       overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       font-size: 18px;
+       color: #000;
+       &:hover{
+         color: #fe7830;
+       }
+    }
+    .inforce{
+      height: 100px;
+      padding: 10px 0 0 0;
+      .img{
+        float: left;
+        width: 200px;
+        height: 100px;
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+
+      }
+      .infor{
+        float: right;
+        width: 470px;
+        height: 100%;
+        overflow: hidden;
+        .tex{
+          margin-top: -10px;
+        }
+
+      }
+    }
+    .tex{
+      line-height: 38px;
+      font-size: 13px;
+      text-align: justify;
+      width: 100%;
+      max-height: 76px;
+      overflow: hidden;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all;     
+
+    }
+    .bq{
+      width: 100%;
+      height: 38px;
+      line-height: 38px;
+      overflow: hidden;
+      .time{
+        float: left;
+        font-size: 12px;
+        color: #9a9a9a;
+      }
+      .lab_bt{
+        float: right;
+        .lab_{
+          float: left;
+          display: block;
+          margin-left: 20px;
+          color: #515155;
+          font-size: 13px;
+          i{
+            display: inline-block;
+            vertical-align: middle;
+            margin: -2px 5px 0;
+          }
+          .icoshar{height:19px;width:19px;background-position: -280px 0;}
+          .icopl{height:18px;width:18px;background-position: -219px 0;}
+          &:hover{
+            color: #fe7830;
+            .icoshar{background-position: -309px 0;}
+            .icopl{background-position: -249px 0;}
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.MinR1{
+  width: 100%;
+  overflow: hidden;
+  .ul1{
+    padding: 10px 0 0;
+    li{
+     padding: 5px 0 10px;
+      .name{
+        &::before{
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin: -2px 5px 0 0;
+          width: 2px;
+          height: 2px;
+          background: #515151;
+          border-radius: 50%;
+        }
+        color: #0172ce;
+        font-size: 16px;
+        display: block;
+      max-height: 60px;
+      line-height: 30px;
+      }
+      .time{
+        font-size: 12px;
+        color: #515151;
+        text-align: right;
+        height: 20px;
+        line-height: 20px;
+        margin-top: -5px;
+      }
+    }
+  }
+  .ul2{
+    padding: 10px 0;
+    li{
+      height: 65px;
+      padding: 15px 0;
+      .img{
+        height: 65px;
+        width: 65px;
+        display: block;
+        float: left;
+      }
+      .infor{
+        width: 255px;
+        float: left;
+        padding-left: 15px;
+        .name{
+            height: 34px;
+            line-height: 34px;
+          font-size: 18px;
+          width: 100%;
+          overflow: hidden;
+          display: block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:hover{
+            text-decoration: underline;
+          }
+
+        }
+        .bq{
+          height: 20px;
+          line-height: 20px;
+          width: 100%;
+          overflow: hidden;
+          padding-top: 6px;
+          .lab{
+            float: left;
+            background: #fff1ea;
+            padding: 0 15px;
+            overflow: hidden;
+            color: #e49a72;
+            margin-right: 10px;
+            font-size: 12px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  .tuijian{
+    padding: 20px 0 10px;
+    .img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+.schoolflex{
+  background: #fafafa;
+  border:1px solid #e5e5e5;
+  width: 78px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  ul{
+    padding: 10px 0;
+  }
+  li{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    color: #6a6a6a;
+    font-size: 12px;
+    cursor: pointer;
+    &:hover{
+      background: #faede5;
+    }
+  }
+  .on{
+    background: #fe8544;
+    color: #fff;
+    &:hover{
+      background: #fe8544;
+      color: #fff;
+    }
+  }
+  .top{
+    padding:0 0 10px 0;
+    cursor: pointer;
+    i{
+
+      margin: 0 auto;
+      display: block;
+      height:18px;width:22px;background-position: -176px -72px;
+    }
+  }
+}
