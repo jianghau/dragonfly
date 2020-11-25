@@ -3,6 +3,10 @@
   background: #fafafa;
 }
 
+.bjffff {
+  background: #ffff;
+}
+
 .Cont_L {
   width: 825px;
   margin-right: 35px;
@@ -953,6 +957,18 @@
   margin-right: 30px;
 }
 
+.htwarp .Cont_L .schoolht .list .td2 {
+  width: 500px;
+}
+
+.htwarp .Cont_L .schoolht .list .lablis .td2 {
+  width: 430px;
+}
+
+.htwarp .Cont_L .schoollist .ul li .infor {
+  width: 550px;
+}
+
 .htwarp .Cont_R {
   width: 245px;
 }
@@ -965,6 +981,24 @@
   border: none;
 }
 
+.schoolht .title .backht {
+  float: right;
+  color: #fe7830;
+}
+
+.schoolht .title .backht:hover {
+  text-decoration: underline;
+}
+
+.schoolht .title .backht i {
+  display: inline-block;
+  vertical-align: middle;
+  height: 11px;
+  width: 9px;
+  background-position: -376px -37px;
+  margin: -2px 10px 0 0;
+}
+
 .schoolht .title .topic {
   float: right;
   background: #fe7830;
@@ -974,6 +1008,7 @@
   line-height: 36px;
   color: #fff;
   margin-top: 24px;
+  cursor: pointer;
 }
 
 .schoolht .title .topic:hover {
@@ -1016,9 +1051,8 @@
 }
 
 .schoolht .htswtch .search .form {
-  height: 28px;
-  width: 138px;
-  border: 1px solid #adadad;
+  height: 30px;
+  width: 151px;
   border-radius: 3px;
   margin: 7px 13px 0 0;
 }
@@ -1027,13 +1061,20 @@
   border: none;
   background: #f2f2f2;
   width: 90px;
-  padding: 4px;
+  padding: 4px 10px;
   height: 20px;
   line-height: 20px;
   font-size: 12px;
   float: left;
   display: block;
   border-radius: 3px 0 0 3px;
+  border: 1px solid #adadad;
+  border-right: 0px;
+  color: #fe7830;
+}
+
+.schoolht .htswtch .search .form input:focus {
+  border-color: #fe7830;
 }
 
 .schoolht .htswtch .search .form .but {
@@ -1044,10 +1085,33 @@
   color: #fff;
   background: #fe7830;
   line-height: 30px;
-  margin: -1px -1px 0 0;
   cursor: pointer;
   font-size: 12px;
   border-radius: 0 3px 3px 0;
+}
+
+.schoolht .htswtch .report {
+  float: right;
+  line-height: 45px;
+  padding: 0 20px;
+  color: #848484;
+}
+
+.schoolht .htswtch .report i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 4px 0 0;
+  height: 17px;
+  width: 16px;
+  background-position: -346px -73px;
+}
+
+.schoolht .htswtch .report.on {
+  color: #fe7830;
+}
+
+.schoolht .htswtch .report.on i {
+  background-position: -371px -70px;
 }
 
 .schoolht .list .td1 {
@@ -1057,7 +1121,7 @@
 }
 
 .schoolht .list .td2 {
-  width: 470px;
+  width: 400px;
   margin-right: 10px;
   float: left;
   overflow: hidden;
@@ -1071,7 +1135,7 @@
 }
 
 .schoolht .list .td4 {
-  width: 150px;
+  width: 120px;
   float: left;
 }
 
@@ -1084,7 +1148,7 @@
 
 .schoolht .list .lablis .td2 {
   padding-left: 70px;
-  width: 400px;
+  width: 330px;
 }
 
 .schoolht .list .ul {
@@ -1160,10 +1224,796 @@
   text-decoration: underline;
 }
 
+.schoolht .list .ul li .td2 a u {
+  color: #ff1212;
+}
+
 .schoolht .list .ul li .td3 {
   height: 100%;
   overflow: hidden;
   color: #6e6e6e;
   font-size: 13px;
+}
+
+.schoolht .htinfor {
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+.schoolht .hthop {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 20px 15px;
+}
+
+.schoolht .hthop .hth1 {
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  display: block;
+  color: #939393;
+}
+
+.schoolht .hthop .hth1 .h1 {
+  float: left;
+  height: 100%;
+  font-size: 18px;
+  max-width: 470px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  color: #000;
+  margin-right: 20px;
+}
+
+.schoolht .hthop .hth1 .Colle {
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  color: #7a7a7a;
+  cursor: pointer;
+  margin: -2px 10px 0;
+}
+
+.schoolht .hthop .hth1 .Colle .icoColle {
+  height: 18px;
+  width: 22px;
+  background-position: -371px 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 8px 0 0;
+}
+
+.schoolht .hthop .hth1 .Colle.on .icoColle {
+  background-position: -339px 0;
+}
+
+.schoolht .hthop .hth1 .reply {
+  float: right;
+  width: 73px;
+  height: 33px;
+  border: 1px solid #fe7830;
+  color: #fe7830;
+  text-align: center;
+  line-height: 33px;
+  cursor: pointer;
+}
+
+.schoolht .hthop .hth1 .reply:hover {
+  background: #fe7830;
+  color: #fff;
+}
+
+.schoolht .hthop .labtex {
+  margin-top: 10px;
+  color: #9b9b9b;
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.schoolht .hthop .labtex span {
+  margin-right: 30px;
+}
+
+.schoolht .hthop .labtex .sp1 {
+  color: #000;
+}
+
+.schoolhtinfor .title {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.schoolhtinfor .htswtch {
+  background: none;
+}
+
+.inforcenter {
+  font-size: 14px;
+  word-break: break-all;
+  padding: 10px 20px;
+  color: #1280f3;
+}
+
+.inforcenter table, .inforcenter video, .inforcenter iframe, .inforcenter embed {
+  max-width: 100%;
+}
+
+.inforcenter img {
+  max-width: 100%;
+  width: auto;
+}
+
+.inforcenter p {
+  line-height: 26px;
+  color: #000;
+  margin: 10px auto;
+}
+
+.inforcenter p > img {
+  cursor: pointer;
+}
+
+.inforcenter h3 {
+  height: 30px;
+  line-height: 30px;
+  padding: 10px 0;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.noinforcenter {
+  color: #696969;
+  padding: 20px;
+  line-height: 30px;
+}
+
+.givethumbsup {
+  background: #fff;
+  border: 1px solid #f7ebe7;
+  text-align: center;
+  margin: 30px auto;
+  width: 78px;
+  height: 68px;
+  border-radius: 50%;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  color: #fe7830;
+  overflow: hidden;
+}
+
+.givethumbsup:hover {
+  background: #fe7830;
+  color: #fff;
+}
+
+.givethumbsup:hover i {
+  background-position: -101px -116px;
+}
+
+.givethumbsup i {
+  display: block;
+  margin: 0 auto;
+  height: 28px;
+  width: 35px;
+  background-position: -149px -118px;
+}
+
+.givethumbsup p {
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  padding-top: 3px;
+}
+
+.givethumbsup.on {
+  background: #fe7830;
+  color: #fff;
+}
+
+.givethumbsup.on i {
+  background-position: -101px -116px;
+}
+
+.bdsharebuttonbox {
+  height: 30px;
+}
+
+.bdsharebuttonbox a {
+  background: url("../images/icoshra.png") no-repeat center !important;
+  display: block;
+  float: left;
+  width: 30px !important;
+  height: 30px !important;
+  margin: 0px 9px 0 0px !important;
+  padding: 0 !important;
+}
+
+.bdsharebuttonbox .bds_more {
+  background-position: 0 -2px !important;
+}
+
+.bdsharebuttonbox .bds_qzone {
+  background-position: -134px -3px !important;
+}
+
+.bdsharebuttonbox .bds_tsina {
+  background-position: -88px -2px !important;
+}
+
+.bdsharebuttonbox .bds_tqq {
+  background-position: -222px -2px !important;
+}
+
+.bdsharebuttonbox .bds_renren {
+  background-position: -177px -2px !important;
+}
+
+.bdsharebuttonbox .bds_weixin {
+  background-position: -47px -3px !important;
+}
+
+.screenlist {
+  padding: 30px 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.screenlist .item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.screenlist .list {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.screenlist .list .bt {
+  float: left;
+  color: #6e6e6e;
+  width: 90px;
+  text-align: right;
+  overflow: hidden;
+  line-height: 32px;
+  height: 32px;
+}
+
+.screenlist .list .lis {
+  float: left;
+  width: 1100px;
+  padding-left: 10px;
+  font-size: 0px;
+}
+
+.screenlist .list .lis a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0px 7px 10px 0;
+  border: 1px solid #dee2e6;
+  background: #f8f8f9;
+  padding: 0 15px;
+  line-height: 30px;
+  height: 30px;
+  color: #6e6e6e;
+}
+
+.screenlist .list .lis a:hover {
+  background: #fe7830;
+  border-color: #fe7830;
+  color: #fff;
+}
+
+.screenlist .list .lis .first {
+  background: #fff1ea;
+  border-color: #ffc8ab;
+}
+
+.screenlist .list .lis .on {
+  background: #fe7830;
+  border-color: #fe7830;
+  color: #fff;
+}
+
+.screenlist .morelis {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  color: #fe7830;
+  height: 20px;
+  line-height: 20px;
+  width: auto;
+  cursor: pointer;
+}
+
+.screenlist .morelis i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 0 0 5px;
+  height: 5px;
+  width: 10px;
+  background-position: -224px -139px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.screenlist .morelis.on i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.fastnav {
+  background: #fff8f5;
+  border: 1px solid #ffc8ab;
+  height: 38px;
+  line-height: 38px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.fastnav .bt {
+  float: left;
+  color: #fe7830;
+  width: 100px;
+  text-align: center;
+}
+
+.fastnav p {
+  float: left;
+  width: 1090px;
+  border-left: 1px solid #ffd5be;
+}
+
+.fastnav p a {
+  float: left;
+  width: 40px;
+  text-align: center;
+  border-right: 1px solid #ffd5be;
+  height: 40px;
+  margin: -1px 0 0 0;
+  line-height: 40px;
+  color: #fe7830;
+}
+
+.fastnav p a:hover {
+  background: #ffc8ab;
+}
+
+.fastnav p .on {
+  color: #fff;
+  background: #fe7830;
+}
+
+.fastnav p .on:hover {
+  background: #fe7830;
+}
+
+.screenrecord {
+  height: 32px;
+  line-height: 32px;
+  padding: 20px 10px;
+  overflow: hidden;
+  color: #6e6e6e;
+}
+
+.screenrecord .bt {
+  float: left;
+  width: 70px;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.screenrecord ul {
+  float: left;
+  max-width: 550px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.screenrecord ul li {
+  float: left;
+  padding: 0 24px  0 10px;
+  border: 1px solid #ffc8ab;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  background: #fff1ea;
+  color: #fe7830;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+
+.screenrecord ul li span {
+  display: block;
+  background: url("../images/ico_img.png") no-repeat center;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  display: block;
+  height: 12px;
+  width: 12px;
+  background-position: -236px -118px;
+}
+
+.screenrecord ul li:hover {
+  background: #fe7830;
+  border-color: #fe7830;
+  color: #fff;
+}
+
+.screenrecord ul li:hover .close {
+  background-position: -215px -117px;
+}
+
+.screenrecord .jl {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+  height: 100%;
+  max-width: 180px;
+}
+
+.schoollisnav {
+  background: #fff8f5;
+  height: 46px;
+  width: 100%;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+
+.schoollisnav::after {
+  content: '';
+  width: 100%;
+  height: 0px;
+  border-bottom: 1px solid #ffd5be;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.schoollisnav li {
+  float: left;
+  padding: 0 20px;
+  display: block;
+  color: #6e6e6e;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px 5px 0 0;
+}
+
+.schoollisnav li:hover {
+  color: #fe7830;
+}
+
+.schoollisnav li a {
+  color: #6e6e6e;
+}
+
+.schoollisnav li a:hover {
+  color: #fe7830;
+}
+
+.schoollisnav .on {
+  height: 46px;
+  background: #fff3ec;
+  border: 1px solid #ffd5be;
+  border-bottom: none;
+}
+
+.schoollisnav .on a {
+  color: #fe7830;
+}
+
+.schoollist .ul li {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 10px 0;
+}
+
+.schoollist .ul li .img {
+  width: 95px;
+  height: 95px;
+  display: block;
+  padding: 20px 12px 0;
+  float: left;
+}
+
+.schoollist .ul li .infor {
+  float: left;
+  width: 480px;
+  color: #515151;
+}
+
+.schoollist .ul li .infor .ptop {
+  line-height: 35px;
+  width: 100%;
+  position: relative;
+  height: 62px;
+}
+
+.schoollist .ul li .infor .ptop .name {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 230px;
+  overflow: hidden;
+  font-size: 24px;
+  font-weight: normal;
+  padding-top: 27px;
+  height: 35px;
+}
+
+.schoollist .ul li .infor .ptop .tis {
+  display: inline-block;
+  vertical-align: middle;
+  color: #515151;
+  font-size: 14px;
+  padding-top: 27px;
+  position: relative;
+  max-width: 160px;
+  overflow: hidden;
+  height: 35px;
+}
+
+.schoollist .ul li .infor .ptop .lab {
+  position: relative;
+  margin-top: 27px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #c24300;
+  background: #fce1bd;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.schoollist .ul li .infor .ptop .lab::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -5px;
+  bottom: 5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #fce1bd;
+}
+
+.schoollist .ul li .infor .ptop .Colle {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 27px;
+  height: 35px;
+  line-height: 35px;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+
+.schoollist .ul li .infor .ptop .Colle .icoColle {
+  height: 18px;
+  width: 22px;
+  background-position: -371px 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 8px 0;
+}
+
+.schoollist .ul li .infor .ptop .Colle.on .icoColle {
+  background-position: -339px 0;
+}
+
+.schoollist .ul li .infor .text {
+  line-height: 30px;
+  padding: 5px 0;
+}
+
+.schoollist .ul li .infor .text i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 5px 0;
+  height: 18px;
+  width: 20px;
+  background-position: -332px -31px;
+}
+
+.schoollist .ul li .infor .bq {
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.schoollist .ul li .infor .bq .lab_ {
+  float: left;
+  background: #fff1ea;
+  padding: 0 15px;
+  overflow: hidden;
+  color: #e49a72;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.schoollist .ul li .infor .lis {
+  padding: 10px 0 0 0;
+  line-height: 30px;
+}
+
+.schoollist .ul li .infor .lis a {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  color: #515151;
+}
+
+.schoollist .ul li .infor .lis a:hover {
+  color: #0172ce;
+  text-decoration: underline;
+}
+
+.schoollist .ul li .ht {
+  border: 1px dashed #ffd5be;
+  margin: 20px 0 5px 0;
+  float: right;
+  width: 200px;
+  padding: 10px;
+}
+
+.schoollist .ul li .ht .h3 {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  color: #0172ce;
+}
+
+.schoollist .ul li .ht p {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  color: #515151;
+}
+
+.schoollist .ul li .ht p a {
+  color: #515151;
+}
+
+.schoollist .ul li .ht p a:hover {
+  color: #fe7830;
+}
+
+.schoollist .ul2 li {
+  padding: 15px 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.schoollist .ul2 li .btname {
+  height: 30px;
+  padding: 15px 0;
+  line-height: 30px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.schoollist .ul2 li .btname .bq {
+  width: 40px;
+  height: 23px;
+  line-height: 23px;
+  background: #ffae01;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.schoollist .ul2 li .btname .a {
+  font-size: 17px;
+}
+
+.schoollist .ul2 li .btname .a:hover {
+  font-weight: bold;
+}
+
+.schoollist .ul2 li .btname i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 10px 0;
+}
+
+.schoollist .ul2 li .btname .icolink {
+  height: 23px;
+  width: 22px;
+  background-position: -301px -117px;
+}
+
+.schoollist .ul2 li .btname .icovideo {
+  height: 22px;
+  width: 24px;
+  background-position: -263px -117px;
+}
+
+.schoollist .ul2 li .text {
+  line-height: 30px;
+  color: #515151;
+  margin-right: 150px;
+  text-align: justify;
+  max-height: 90px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.schoollist .ul2 li .lab {
+  padding-top: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  color: #a0a0a0;
+  font-size: 13px;
+}
+
+.schoollist .ul2 li .lab .time {
+  float: left;
+}
+
+.schoollist .ul2 li .lab .lab_bt {
+  float: right;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_ {
+  float: left;
+  display: block;
+  margin-left: 20px;
+  color: #515155;
+  font-size: 12px;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_ i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 5px 0;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_ .icoshar {
+  height: 19px;
+  width: 19px;
+  background-position: -280px 0;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_ .icopl {
+  height: 18px;
+  width: 18px;
+  background-position: -219px 0;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_:hover {
+  color: #fe7830;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_:hover .icoshar {
+  background-position: -309px 0;
+}
+
+.schoollist .ul2 li .lab .lab_bt .lab_:hover .icopl {
+  background-position: -249px 0;
 }
 /*# sourceMappingURL=common.css.map */
