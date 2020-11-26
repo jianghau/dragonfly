@@ -547,7 +547,7 @@
        overflow: hidden;
        white-space: nowrap;
        text-overflow: ellipsis;
-       font-size: 15px;
+       font-size: 16px;
        color: #000;
        &:hover{
          color: #fe7830;
@@ -1386,8 +1386,7 @@
         background: #fe7830;
         border-color: #fe7830;
         color: #fff;
-     
-        .close{
+        span{
           background-position: -215px -117px;
         }
       }
@@ -1478,10 +1477,13 @@
             vertical-align: middle;
             max-width: 230px;
             overflow: hidden;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: normal;
             padding-top: 27px;
             height: 35px;
+            &:hover{
+              text-decoration: underline;
+            }
           }
           .tis{
             display: inline-block;
@@ -1643,7 +1645,7 @@
         .a{
           font-size: 17px;
           &:hover{
-            font-weight: bold;
+           text-decoration:underline;
           }
 
         }
