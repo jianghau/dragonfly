@@ -17,7 +17,20 @@
       <div class="header">
         <a href="##" class="logo"><img src="images/logo.png" alt=""></a>
         <div class="location">
-          <div class="locationbt"><i class="icoimg dw"></i><span>重庆</span><i class="icoimg ico1"></i></div>
+          <!-- <div class="locationbt"><i class="icoimg dw"></i><span>重庆</span><i class="icoimg ico1"></i></div> -->
+          <form class="layui-form" >
+            <div class="layui-form-item locationbt">
+              <i class="icoimg dw"></i>
+              <div class="layui-input-inline">
+                <select name="quiz"  lay-filter="selectaddress">
+                  <option value="重庆" selected="">重庆</o>
+                  <option value="上海">上海</option>
+                  <option value="湖北">湖北</option>
+                  <option value="深圳">深圳</option>
+                </select>
+              </div>
+              </div>
+            </form>
         </div>
         <div class="search">
           <input type="text" name="" id="" placeholder="查学校 查政策" class="input">

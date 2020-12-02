@@ -1007,7 +1007,7 @@
   text-align: center;
   line-height: 36px;
   color: #fff;
-  margin-top: 24px;
+  margin-top: 16px;
   cursor: pointer;
 }
 
@@ -1330,9 +1330,12 @@
 }
 
 .inforcenter {
-  font-size: 14px;
+  font-size: 16px;
   word-break: break-all;
   padding: 10px 20px;
+}
+
+.inforcenter a {
   color: #1280f3;
 }
 
@@ -1346,7 +1349,7 @@
 }
 
 .inforcenter p {
-  line-height: 26px;
+  line-height: 30px;
   color: #000;
   margin: 10px auto;
 }
@@ -1362,6 +1365,41 @@
   color: #000;
   font-size: 16px;
   font-weight: bold;
+}
+
+.inforcenter .downtishi {
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.inforcenter .downtishi span {
+  padding-left: 20px;
+}
+
+.inforcenter .downtishi i {
+  color: #fe7830;
+}
+
+.inforcenter table {
+  max-width: 100%;
+  text-align: center;
+  line-height: 46px;
+  font-size: 14px;
+  margin: 10px auto;
+  color: #515a6e;
+}
+
+.inforcenter table th {
+  background: #f8f8f9;
+  font-size: 14px;
+}
+
+.inforcenter table td {
+  font-size: 12px;
+}
+
+.inforcenter table tr:hover {
+  background: #ebf7ff;
 }
 
 .noinforcenter {
@@ -1456,6 +1494,49 @@
 
 .bdsharebuttonbox .bds_weixin {
   background-position: -47px -3px !important;
+}
+
+.bdsharebuttonbox .pl {
+  background: none !important;
+  position: relative;
+  cursor: pointer;
+}
+
+.bdsharebuttonbox .pl i {
+  height: 28px;
+  width: 28px;
+  background-position: -409px -37px;
+  display: block;
+  margin: 0 auto;
+}
+
+.bdsharebuttonbox .pl .layui-badge {
+  margin-left: 10px;
+}
+
+.flex_share {
+  background: #fff;
+  position: fixed;
+  width: 60px;
+  text-align: center;
+  top: 0px;
+  left: 0;
+}
+
+.flex_share .bdsharebuttonbox {
+  width: 100%;
+  height: auto;
+}
+
+.flex_share .bdsharebuttonbox .bt_ {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+
+.flex_share .bdsharebuttonbox a {
+  float: initial;
+  margin: 5px auto !important;
 }
 
 .screenlist {
@@ -1681,25 +1762,18 @@
   z-index: 0;
 }
 
-.schoollisnav li {
+.schoollisnav a {
   float: left;
   padding: 0 20px;
   display: block;
   color: #6e6e6e;
   position: relative;
+  cursor: pointer;
   z-index: 1;
   border-radius: 5px 5px 0 0;
 }
 
-.schoollisnav li:hover {
-  color: #fe7830;
-}
-
-.schoollisnav li a {
-  color: #6e6e6e;
-}
-
-.schoollisnav li a:hover {
+.schoollisnav a:hover {
   color: #fe7830;
 }
 
@@ -1902,12 +1976,9 @@
 }
 
 .schoollist .ul2 li .btname {
-  height: 30px;
   padding: 15px 0;
   line-height: 30px;
   width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
   display: block;
 }
@@ -1958,10 +2029,15 @@
   margin-right: 150px;
   text-align: justify;
   max-height: 90px;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   word-break: break-all;
+}
+
+.schoollist .ul2 li .text_p {
+  margin: 0;
 }
 
 .schoollist .ul2 li .lab {
@@ -1977,6 +2053,12 @@
 
 .schoollist .ul2 li .lab .time {
   float: left;
+  padding-right: 30px;
+}
+
+.schoollist .ul2 li .lab .bq_ {
+  float: left;
+  padding-right: 30px;
 }
 
 .schoollist .ul2 li .lab .lab_bt {
@@ -2019,5 +2101,567 @@
 
 .schoollist .ul2 li .lab .lab_bt .lab_:hover .icopl {
   background-position: -249px 0;
+}
+
+.schoollist .ul2 li .labinfor {
+  height: 100px;
+  padding: 20px 0 0 0;
+}
+
+.schoollist .ul2 li .labinfor .img {
+  float: left;
+  height: 100px;
+  width: 200px;
+}
+
+.schoollist .ul2 li .labinfor .infor {
+  float: left;
+  width: 700px;
+  padding-left: 20px;
+}
+
+.schoollist .ul2 li .labinfor .infor .btname {
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 0px;
+}
+
+.schoollist .ul2 li .labinfor .infor .text {
+  max-height: 46px;
+  -webkit-line-clamp: 2;
+  line-height: 23px;
+}
+
+.schoollist .ul1 li .img {
+  height: 60px;
+  width: 60px;
+}
+
+.schoollist .ul1 li .infor .ptop {
+  padding-top: 10px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.schoollist .ul1 li .infor .ptop .name, .schoollist .ul1 li .infor .ptop .tis, .schoollist .ul1 li .infor .ptop .lab {
+  padding: 0;
+  margin-top: 0px;
+}
+
+.competition {
+  padding-top: 30px;
+}
+
+.competition .MinR1 .title {
+  height: 52px;
+  line-height: 52px;
+  overflow: hidden;
+  margin-top: -15px;
+}
+
+.competition .MinR1 {
+  width: 240px;
+}
+
+.competition .MinR1 .img {
+  height: 170px;
+}
+
+.competition .Cont_L .schoollisnav a {
+  min-width: 90px;
+  text-align: center;
+}
+
+.competition .Cont_L .schoollisnav .layui-badge {
+  margin-top: -20px;
+}
+
+.competitiontop {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.competitionlab1 {
+  width: 945px;
+  height: 100%;
+}
+
+.competitionlab1 .lunbox {
+  height: 240px;
+  width: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.competitionlab1 .lunbox:hover .icoimg {
+  display: block;
+}
+
+.competitionlab1 .lunbox .bd li {
+  width: 480px;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.competitionlab1 .lunbox .bd li:hover p {
+  text-decoration: underline;
+}
+
+.competitionlab1 .lunbox .bd li .img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+}
+
+.competitionlab1 .lunbox .bd li p {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  line-height: 40px;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+  zoom: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.competitionlab1 .lunbox .bd li p span {
+  max-width: 350px;
+  padding: 0 10px;
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+.competitionlab1 .lunbox .hd {
+  position: absolute;
+  height: 8px;
+  line-height: 8px;
+  width: 100px;
+  right: 0px;
+  bottom: 10px;
+  text-align: center;
+}
+
+.competitionlab1 .lunbox .hd li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 2px;
+  border-radius: 0px;
+  margin: -2px 2px 0;
+  border: 1px solid #857575;
+  overflow: hidden;
+  text-indent: 100em;
+}
+
+.competitionlab1 .lunbox .hd .on {
+  background: #fe7830;
+  border-color: #fe7830;
+}
+
+.competitionlab1 .lunbox .icoimg {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  display: none;
+  cursor: pointer;
+  height: 40px;
+  width: 25px;
+}
+
+.competitionlab1 .lunbox .prev {
+  left: 10px;
+  background-position: 0 -111px;
+}
+
+.competitionlab1 .lunbox .next {
+  right: 10px;
+  background-position: -45px -109px;
+}
+
+.competitionlab1 .news_ {
+  width: 425px;
+  padding-left: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.competitionlab1 .news_ .title {
+  height: 52px;
+  line-height: 52px;
+  overflow: hidden;
+  margin-top: -15px;
+}
+
+.competitionlab1 .news_ .title .bt {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.competitionlab1 .news_ .title .bt::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #fe7830;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0px;
+  display: none;
+}
+
+.competitionlab1 .news_ .title .bt::after {
+  display: none;
+}
+
+.competitionlab1 .news_ .title .on::after {
+  display: block;
+}
+
+.competitionlab1 .news_ .title .on::before {
+  display: block;
+}
+
+.competitionlab1 .news_ ul {
+  padding: 10px 0 0 0;
+}
+
+.competitionlab1 .news_ ul li {
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.competitionlab1 .news_ ul li a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.competitionlab1 .news_ ul li a::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 8px 0 0;
+  width: 3px;
+  height: 3px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.competitionlab1 .news_ ul li a:hover::before {
+  background: #fe7830;
+}
+
+.competitionlab1 .news_ ul .on {
+  font-weight: bold;
+}
+
+.competitiontab {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.competitiontab .schoollisnav {
+  margin-top: 20px;
+}
+
+.competitiontab ul {
+  width: 1210px;
+  padding: 10px 0 0 0;
+}
+
+.competitiontab ul li {
+  width: 290px;
+  height: 218px;
+  border: 1px solid #fce1bd;
+  float: left;
+  overflow: hidden;
+  margin: 10px 10px 0 0;
+}
+
+.competitiontab ul li:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(254, 120, 48, 0.5);
+          box-shadow: 0px 0px 10px rgba(254, 120, 48, 0.5);
+}
+
+.competitiontab ul li .text {
+  padding: 15px 0 0 10px;
+  height: 165px;
+  overflow: hidden;
+}
+
+.competitiontab ul li .img img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 70px;
+  margin-bottom: 10px;
+}
+
+.competitiontab ul li .name {
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.competitiontab ul li p {
+  line-height: 25px;
+  width: 100%;
+  overflow: hidden;
+  color: #606060;
+}
+
+.competitiontab ul li .bq {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.competitiontab ul li .bq a {
+  width: 21%;
+  float: left;
+  display: block;
+  text-align: center;
+  margin: 0 2%;
+  color: #0172ce;
+}
+
+.competitiontab ul li .bq a:hover {
+  color: #fe7830;
+  text-decoration: underline;
+}
+
+.competitiondy {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.competitiondy .img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.competitiondy .text {
+  position: absolute;
+  height: 100%;
+  width: 400px;
+  right: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.competitiondy .text p {
+  padding: 15px 20px 0;
+  overflow: hidden;
+  color: #fff;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.newstishi {
+  height: 35px;
+  line-height: 35px;
+  background: #fea06e;
+  text-align: center;
+  color: #fff;
+}
+
+.newstishi p {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.newstishi2 {
+  height: 45px;
+  line-height: 45px;
+  background: #eeeeee;
+  color: #949494;
+  font-size: 12px;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.newstishi2 p {
+  padding: 0 20px;
+}
+
+.newsinfortop {
+  padding: 30px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.newsinfortop .htop {
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.newsinfortop .htop .h1 {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  color: #343434;
+  max-width: 1080px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.newsinfortop .htop .Colle {
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  color: #000;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.newsinfortop .htop .Colle .icoColle {
+  height: 18px;
+  width: 22px;
+  background-position: -371px 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 8px 0 0;
+}
+
+.newsinfortop .htop .Colle.on .icoColle {
+  background-position: -339px 0;
+}
+
+.newsinfortop .bq {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.newsinforlftborder {
+  border-left: 1px solid #f1f1f1;
+  padding-right: 72px;
+}
+
+.Minl_a {
+  padding: 0 20px;
+}
+
+.Minl_a .class_p {
+  line-height: 40px;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.Minl_a .class_p a {
+  color: #0172ce;
+  margin-right: 20px;
+}
+
+.Minl_a .class_p a:hover {
+  text-decoration: underline;
+}
+
+.Minl_a .ul {
+  padding: 10px 0;
+}
+
+.Minl_a .ul li {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Minl_a .ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+  max-width: 600px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.Minl_a .ul li a::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 5px 0 0;
+  width: 2px;
+  height: 2px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.Minl_a .ul li a:hover::before {
+  background: #fe7830;
+}
+
+.Minl_a .ulimg {
+  width: 105%;
+}
+
+.Minl_a .ulimg li {
+  float: left;
+  background: #dcdcdc;
+  margin-bottom: 8px;
+}
+
+.Minl_a .ulimg li .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Minl_a .ulimg .li1 {
+  width: 548px;
+  height: 206px;
+  margin-right: 5px;
+}
+
+.Minl_a .ulimg .li2 {
+  width: 276px;
+  height: 98px;
+}
+
+.Minl_a .ulimg .li3 {
+  width: 276px;
+  height: 98px;
+}
+
+.Minl_a .ulimg .li4 {
+  width: 832px;
+  height: 100px;
+  margin: 0;
 }
 /*# sourceMappingURL=common.css.map */

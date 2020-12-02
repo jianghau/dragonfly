@@ -1351,6 +1351,204 @@ body .footerwarp {
   display: block;
 }
 
+.parentfollow {
+  width: 100%;
+  padding: 10px 0 20px;
+}
+
+.parentfollow .parent1 {
+  width: 790px;
+  overflow: hidden;
+}
+
+.parentfollow .parent1 ul {
+  width: 110%;
+}
+
+.parentfollow .parent1 ul li {
+  float: left;
+  width: 248px;
+  height: 173px;
+  display: block;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  margin: 20px 20px 0 0;
+}
+
+.parentfollow .parent1 ul li:hover {
+  border-color: #fe7830;
+}
+
+.parentfollow .parent1 ul li:hover .address {
+  color: #fe7830;
+}
+
+.parentfollow .parent1 ul li:hover .address i {
+  background-position: -412px 0;
+}
+
+.parentfollow .parent1 ul li .img {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.parentfollow .parent1 ul li .name {
+  float: left;
+  width: 160px;
+  height: 27px;
+  line-height: 27px;
+  padding: 15px 0;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.parentfollow .parent1 ul li .name:hover {
+  color: #fe7830;
+}
+
+.parentfollow .parent1 ul li .lab_p {
+  height: 24px;
+  width: 167px;
+  float: left;
+  overflow: hidden;
+}
+
+.parentfollow .parent1 ul li .lab_p .lab {
+  display: block;
+  float: left;
+  padding: 0 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+  margin-right: 15px;
+}
+
+.parentfollow .parent1 ul li .address {
+  width: 165px;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  color: #666;
+  float: right;
+  padding-top: 10px;
+}
+
+.parentfollow .parent1 ul li .address i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 6px 0 0;
+  height: 17px;
+  width: 13px;
+  background-position: -439px 0;
+}
+
+.parentfollow .parent1 ul li .bq {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.parentfollow .parent1 ul li .bq a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  overflow: hidden;
+  color: #333;
+  cursor: pointer;
+}
+
+.parentfollow .parent1 ul li .bq a:hover {
+  color: #fe7830;
+  text-decoration: underline;
+}
+
+.parentfollow .parent2 {
+  width: 380px;
+}
+
+.parentfollow .parent2 .title {
+  border: none;
+}
+
+.parentfollow .parent2 .lis_p .lis {
+  color: #666;
+  line-height: 30px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+}
+
+.parentfollow .parent2 .lis_p .bt {
+  height: 30px;
+}
+
+.parentfollow .parent2 .lis_p p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.parentfollow .parent2 .lis_p p a {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.parentfollow .parent2 .ul li {
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.parentfollow .parent2 .ul li a {
+  display: block;
+  float: left;
+  width: auto;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.parentfollow .parent2 .ul li a::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 8px 0 0;
+  width: 3px;
+  height: 3px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.parentfollow .parent2 .ul li span {
+  float: right;
+  text-align: right;
+  max-width: 79px;
+  overflow: hidden;
+  color: #666;
+}
+
 .fellnav {
   width: 100px;
   border: 1px solid #edeeee;

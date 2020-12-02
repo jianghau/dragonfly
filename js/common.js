@@ -1,3 +1,4 @@
+
 //页面左右划动
 function HomeScroll(a, b) {
   function g() {
@@ -32,6 +33,12 @@ layui.use(['element','form'], function(){
   var form = layui.form; //  form
   form.on('select(schoolstel)', function(data){
     layui.layer.msg(data.value);//得到学校首页的切换学校
+  });
+  form.on('select(selectschool)', function(data){
+    layui.layer.msg(data.value);//得到被选中的值学校的值 首页
+  }); 
+  form.on('select(selectaddress)', function(data){
+    layui.layer.msg('切换的城市'+data.value);//得到地址定位
   }); 
 });
   // TAB
@@ -43,6 +50,7 @@ layui.use(['element','form'], function(){
         }
     })
 }  
+tabhover($(".Imai6  ul li"))   //首页的排行榜
   // 切换的公共类名
 $(".swichbox  .swichlab  a").mouseenter(function(){
     $(this).addClass("on").siblings().removeClass("on");
@@ -157,4 +165,39 @@ function screenlist(){
 }
 screenlist();
  
+// 竞赛轮播
+if($(".competitionlab1  .lunbox .bd li").size()>=1){
+  jQuery(".competitionlab1  .lunbox").slide({
+          mainCell: ".bd ul",
+          titCell:".hd ul",
+          effect:'leftLoop',
+          autoPlay: true,
+          trigger: 'mouseover',
+          easing: 'swing', interTime:"6000",
+          mouseOverStop: 'true',
+          pnLoop: 'true',
+          autoPage:true,
+        
+   });
+};
 
+// 换一换
+var Changeit_i=0;
+$(".Changeit .hyh").click(function(){
+  var i=$(this).parents(".Changeit").find(".itemhyh").size();
+  Changeit_i++;
+  if(Changeit_i>=i){  Changeit_i=0; }
+  $(this).parents(".Changeit").find(".itemhyh").eq(Changeit_i).show().siblings().hide();
+})
+
+// 分享右侧的定位
+$(window).resize(function() {  flex_share();});
+$(window).scroll(function() { flex_share(); });
+function flex_share(){
+  var left=($(window).width()-1200)/2-70;
+  var top=$(".commont").offset().top+50;
+  if($(window).width()<=1300){  left=0  }
+  if($(window).scrollTop() <=top-50){  $(".flex_share").fadeOut()}else{  $(".flex_share").fadeIn() }
+  $(".flex_share").css({"left":left+"px","top":top+"px"})
+}
+flex_share();

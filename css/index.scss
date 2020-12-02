@@ -1112,6 +1112,183 @@ body{
       }
   }
 }
+.parentfollow{
+  width: 100%;
+  padding: 10px 0 20px;
+  .parent1{
+    width: 790px;
+    overflow: hidden;
+    ul{
+      width: 110%;
+      li{
+        float: left;
+        width: 248px;
+        height: 173px;
+        display: block;
+        border:1px solid #cfcfcf;
+        border-radius: 5px;
+        margin: 20px 20px 0 0;
+        &:hover{
+          border-color: #fe7830;
+          .address{
+            color: #fe7830;
+            i{
+              background-position: -412px 0;
+            }
+          }
+        }
+        .img{
+          display: block;
+          float: left;
+          width: 40px;
+          height: 40px;
+          margin: 20px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .name{
+          float: left;
+          width: 160px;
+          height: 27px;
+          line-height: 27px;
+          padding: 15px 0;
+          overflow: hidden;
+          display: block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #000;
+          font-size: 16px;
+          font-weight: bold;
+         
+          &:hover{
+            color: #fe7830;
+          }
+        }
+        .lab_p{
+         height: 24px;
+         width: 167px;
+         float: left;
+         overflow: hidden;
+         .lab{
+           display: block;
+           float: left;
+           padding: 0 10px;
+           border:1px solid #cfcfcf;
+           border-radius:3px;
+           font-size: 12px;
+           height: 22px;
+           line-height: 22px;
+           color: #666;
+           margin-right: 15px;
+         }
+        }
+        .address{
+          width: 165px;
+          overflow: hidden;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+          color: #666;
+          float: right;
+          padding-top: 10px;
+          i{
+            display: inline-block;
+            vertical-align: middle;
+            margin: -2px 6px 0 0;
+            height:17px;width:13px;background-position: -439px 0;
+          }
+        }
+        .bq{
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          overflow: hidden;
+          width: 100%;
+          a{
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 10px;
+            overflow: hidden;
+            color: #333;
+            cursor: pointer;
+            &:hover{
+              color: #fe7830;
+              text-decoration: underline;
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+  .parent2{
+    width:380px;
+    .title{
+      border:none;
+    }
+    .lis_p{
+    
+      .lis{
+        color: #666;
+        line-height: 30px;
+        height: auto;
+        display: flex;
+        font-size: 15px;
+      }
+      .bt{
+        height: 30px;
+      }
+      p{
+        flex: 1;
+        overflow: hidden;
+        a{
+         margin-right: 10px;
+         display: inline-block;
+         vertical-align: middle;
+        }
+      }
+    }
+    .ul{
+      li{
+        height: 36px;
+        line-height: 36px;
+        width: 100%;
+        overflow: hidden;
+        a{
+          display: block;
+          float: left;
+          width: auto;
+          max-width: 300px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &::before{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin: -2px 8px 0 0;
+            width: 3px;
+            height: 3px;
+            background: #000;
+            border-radius: 50%;
+        
+          }
+
+        }
+        span{
+          float: right;
+          text-align: right;
+          max-width: 79px;
+          overflow: hidden;
+          color: #666;
+        }
+      }
+    }
+
+    
+  }
+}
 .fellnav{
   width: 100px;
   border:1px solid #edeeee;

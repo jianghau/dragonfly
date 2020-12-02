@@ -1,13 +1,4 @@
-  // 切换的公共类名
-  $(".swichbox  .swichlab  a").mouseenter(function(){
-    $(this).addClass("on").siblings().removeClass("on");
-    $(this).parents(".swichbox").find(".swichitem .item").eq($(this).index()).show().siblings().hide();
-})
-  // 切换的公共类名
-$(".switchboxck  .switchlab  a").click(function(){
-    $(this).addClass("on").siblings().removeClass("on");
-    $(this).parents(".switchboxck").find(".switchitem .item").eq($(this).index()).show().siblings().hide();
-})
+
 
 // 首页轮播
 if($(".Imai1-1-1 .lunbox .bd li").size()>=1){
@@ -46,29 +37,11 @@ if($(".Imai1-1-2 .lunbox .bd li").size()>=1){
    }
   })
 };
-layui.use(['element','form'], function(){
-  var headernav = layui.element; //  导航
-  var form= layui.form; //  form
-  form.on('select(selectschool)', function(data){
-    layui.layer.msg(data.value);//得到被选中的值学校的值
-  });  
-});
 // 学校
 $(".Imai2 .warpitem .labbt li").click(function(){
   $(this).addClass("on").siblings().removeClass("on")
   $(this).parents(".item").find(".scroll .lis").eq($(this).index()).show().siblings().hide()
 })
-
-  // TAB
-  function tabhover(e, f) {
-    e.mouseenter(function() {
-        $(this).addClass('on').siblings().removeClass('on');
-        if (f) {
-            f.hide().eq($(this).index()).show();
-        }
-    })
-} 
-tabhover($(".Imai6  ul li"))
 
 // 导航
 function fllexnav(obj){

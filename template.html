@@ -6,6 +6,7 @@
   <title>蜻蜓站的模板</title>
   <link rel="stylesheet" href="js/layui/css/layui.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/common.css">
   <script src="js/jq1.9.js"></script>
   <script src="js/layui/layui.js"></script>
 </head>
@@ -16,7 +17,19 @@
       <div class="header">
         <a href="##" class="logo"><img src="images/logo.png" alt=""></a>
         <div class="location">
-          <div class="locationbt"><i class="icoimg dw"></i><span>重庆</span><i class="icoimg ico1"></i></div>
+          <form class="layui-form" >
+            <div class="layui-form-item locationbt">
+              <i class="icoimg dw"></i>
+              <div class="layui-input-inline">
+                <select name="quiz"  lay-filter="selectaddress">
+                  <option value="重庆" selected="">重庆</o>
+                  <option value="上海">上海</option>
+                  <option value="湖北">湖北</option>
+                  <option value="深圳">深圳</option>
+                </select>
+              </div>
+              </div>
+            </form>
         </div>
         <div class="search">
           <input type="text" name="" id="" placeholder="查学校 查政策" class="input">
@@ -68,6 +81,11 @@
       <a href="schoolhtinfor2.html">内容影藏显示</a>
       <a href="schoollist.html">学校列表</a>
       <a href="schoollist2.html">招生流程列表</a>
+      <a href="schoolnone.html">暂无内容</a>
+      <a href="competition.html">竞赛首页页面</a>
+      <a href="competitiondy.html">竞赛单元</a>
+      <a href="competitionht.html">竞赛话题</a>
+      <a href="newsinfor.html">文章详情</a>
     </div>
   </div>
   <!-- 底部 -->

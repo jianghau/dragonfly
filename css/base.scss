@@ -43,7 +43,19 @@ body {min-width:1200px;font-family:"微软雅黑","PingFang SC",STHeiti,'Microso
       line-height: 50px;
       position: relative;
       margin: 42px 20px 0;
-
+      .layui-form-item .layui-input-inline{
+        width: 80px;
+        // text-align: center;
+        float: initial;
+      }
+      .layui-form-select .layui-input{
+        border:none;
+        // text-align: center;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+      }
       .locationbt{
           color: #333333;
           font-size: 15px;
@@ -51,11 +63,11 @@ body {min-width:1200px;font-family:"微软雅黑","PingFang SC",STHeiti,'Microso
           i{
             display: inline-block;
             vertical-align: middle;
-            margin: -2px 10px 0;
+          
           }
           .dw{
             height:17px;width:13px;background-position: -81px 0;
-           
+            margin: 3px 5px 0;
           }
           .ico1{
             height:10px;width:18px;background-position: -42px 0;
@@ -291,6 +303,7 @@ body {min-width:1200px;font-family:"微软雅黑","PingFang SC",STHeiti,'Microso
    .ico4{height:20px;width:22px;background-position: -134px -72px;}
    .ico3{height:19px;width:19px;background-position: 0 -70px;}
    .ico5{height:19px;width:19px;background-position: -31px -72px;}
+   .ico6{height:20px;width:18px;background-position: -352px -120px;}
   }
   .bt3{
     float: left;
@@ -310,6 +323,51 @@ body {min-width:1200px;font-family:"微软雅黑","PingFang SC",STHeiti,'Microso
     background: #fe7830;
     }
   }
+  .bt4{
+     float: left;  
+     font-size: 18px;
+  }
+  .bt_a{
+    float: left;
+    height: 100%;
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    padding: 0 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    &::after{
+      width: 100%;
+      height: 2px;
+      content: '';
+      display: none;
+      position: absolute;
+      left: 0px;
+      bottom: -1px;
+      background: #fe7830;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border:5px solid transparent;
+      border-bottom-color:#fe7830 ;
+      left: 50%;
+      margin-left: -3px;
+      bottom: 0px;
+      display: none;
+
+    }
+    &:hover{
+      &::before{display: block;}
+      &::after{display: block;}
+    }
+  }
+  .bt_a.on{
+    &::before{display: block;}
+    &::after{display: block;}
+  }
   .lab{
     float: right;
     a{
@@ -320,6 +378,11 @@ body {min-width:1200px;font-family:"微软雅黑","PingFang SC",STHeiti,'Microso
     .on{
       color: #fe7830;
     }
+  }
+  .hyh{
+    float: right;
+    color: #fe7830;
+    cursor: pointer;
   }
   .more{
     float: right;
@@ -373,14 +436,12 @@ body {min-width:1200px;font-family:"微软雅黑","PingFang SC",STHeiti,'Microso
        }
      }
      .lis{
-       float: left;
-       width: 22%;
-       margin-right: 3%;
        a{
+         float: left;
+        width: 22%;
+        margin-right: 3%;
          display: block;
-         width: 100%;
          overflow: hidden;
-
        }
      }
    }
