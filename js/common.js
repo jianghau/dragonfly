@@ -160,14 +160,27 @@ function screenlist(){
 				};
 			}
 		}
-
-	
 }
 screenlist();
- 
 // 竞赛轮播
 if($(".competitionlab1  .lunbox .bd li").size()>=1){
   jQuery(".competitionlab1  .lunbox").slide({
+          mainCell: ".bd ul",
+          titCell:".hd ul",
+          effect:'leftLoop',
+          autoPlay: true,
+          trigger: 'mouseover',
+          easing: 'swing', interTime:"6000",
+          mouseOverStop: 'true',
+          pnLoop: 'true',
+          autoPage:true,
+        
+   });
+};
+
+// 手册轮播
+if($(".manualtop_R .lunbox .bd li").size()>=1){
+  jQuery(".manualtop_R .lunbox").slide({
           mainCell: ".bd ul",
           titCell:".hd ul",
           effect:'leftLoop',
@@ -201,3 +214,40 @@ function flex_share(){
   $(".flex_share").css({"left":left+"px","top":top+"px"})
 }
 flex_share();
+
+// 手册内页左侧树形菜单
+$(".manuallab ul li .bt_a").click(function(){
+  if($(this).hasClass("on")){
+  
+  }else{
+    $(this).parents("li").addClass("on");
+    $(this).parents("li").siblings().removeClass("on");
+  }
+})
+
+$(function () {
+  //查看更多小区简介
+  if ($('.housinglis .text_more').size() >= 1) {
+      var txt_h = 192;
+      var txt_h1 = $('.housinglis .text_more').height();
+      var top_ = $(".housinglis .text_more ").offset().top;
+      console.log(txt_h1)
+      if (txt_h1 > txt_h) {
+          $('.housinglis .text_more').addClass('show_js');
+          $('.housinglis .text_more').css({height: txt_h + "px", "overflow": "hidden", })
+          $('.housinglis .text_more .morelink').show();
+          $('.housinglis .text_more .morelink').click(function () {
+              if ($('.housinglis .text_more').hasClass('show_js')) {
+                  $('.housinglis .text_more').removeClass('show_js');
+                  $('.housinglis .text_more .morelink').html('收起更多>> ');
+                  $('.housinglis .text_more').css({height: "auto"});
+              } else {
+                  $('.housinglis .text_more').addClass('show_js');
+                  $('.housinglis .text_more .morelink').html('展开更多>> ');
+                  $('.housinglis .text_more').css({height: txt_h + "px"});
+                  $("body,html").animate({scrollTop: top_ - 40 + "px"}, 0);
+              }
+          })
+      }
+  }
+});

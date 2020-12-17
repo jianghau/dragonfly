@@ -174,6 +174,100 @@
   display: block;
 }
 
+.MinR2 ul {
+  padding: 10px 0;
+}
+
+.MinR2 ul li {
+  height: 30px;
+  padding: 7px 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.MinR2 ul li:hover {
+  color: #0b72d9;
+}
+
+.MinR2 ul li i {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 10px 0;
+}
+
+.MinR2 ul li .icolink {
+  height: 23px;
+  width: 22px;
+  background-position: -301px -117px;
+}
+
+.MinR2 ul li a {
+  color: #666666;
+}
+
+.MinR2 ul li a:hover {
+  color: #0b72d9;
+}
+
+.MinR3 ul {
+  padding: 10px 0;
+}
+
+.MinR3 ul li {
+  padding-bottom: 10px;
+}
+
+.MinR3 ul li .bq {
+  height: 40px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.MinR3 ul li .bq .name {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
+.MinR3 ul li .bq .name:hover {
+  color: #0b72d9;
+}
+
+.MinR3 ul li .bq .dz {
+  color: #999;
+  font-size: 14px;
+}
+
+.MinR3 ul li .lab .a {
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #e6e6e6;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 2px;
+  padding: 0 10px;
+  margin: 0 5px 5px 0;
+  color: #555;
+}
+
+.MinR3 ul li .lab .a:hover {
+  background: #fe7830;
+  color: #fff;
+  border-color: #fe7830;
+}
+
 .school_hometop {
   border-bottom: 1px solid #f1f1f1;
   background: #fff;
@@ -904,54 +998,6 @@
   background-position: -176px -72px;
 }
 
-.Feedbackfixed {
-  position: fixed;
-  width: 48px;
-  height: 96px;
-  text-align: center;
-  border: 1px solid #e6e6e6;
-  overflow: hidden;
-  top: 75%;
-  margin-top: -50px;
-  background: #fafafa;
-  right: 20px;
-}
-
-.Feedbackfixed .back {
-  padding: 8px 10px;
-  line-height: 18px;
-  height: 36px;
-  color: #333333;
-  background: #e6e6e6;
-  width: 30px;
-  margin: -1px 0 0 -1px;
-  display: block;
-  font-size: 12px;
-}
-
-.Feedbackfixed .back:hover {
-  background: #555555;
-  color: #fff;
-}
-
-.Feedbackfixed .top {
-  width: 100%;
-  position: relative;
-  cursor: pointer;
-  padding: 12px 0;
-}
-
-.Feedbackfixed .top:hover .i {
-  background-position: -255px -71px;
-}
-
-.Feedbackfixed .top .i {
-  margin: 0 auto;
-  height: 20px;
-  width: 17px;
-  background-position: -220px -73px;
-}
-
 .htwarp .Cont_L {
   width: 925px;
   margin-right: 30px;
@@ -975,6 +1021,31 @@
 
 .htwarp .MinR1 .ul2 li .infor {
   width: 165px;
+}
+
+.htwarp2 .Cont_L {
+  padding: 0 30px;
+  width: 840px;
+  margin-right: 20px;
+  background: #fff;
+}
+
+.htwarp2 .Cont_R {
+  padding: 0 20px 20px;
+  width: 240px;
+  background: #fff;
+}
+
+.htwarp3 .Cont_R {
+  padding: 0 10px;
+  width: 880px;
+  background: #fff;
+}
+
+.htwarp3 .Cont_L {
+  width: 280px;
+  background: #fff;
+  margin-right: 20px;
 }
 
 .schoolht .title {
@@ -1333,10 +1404,15 @@
   font-size: 16px;
   word-break: break-all;
   padding: 10px 20px;
+  color: #000;
 }
 
 .inforcenter a {
   color: #1280f3;
+}
+
+.inforcenter a:hover {
+  text-decoration: underline;
 }
 
 .inforcenter table, .inforcenter video, .inforcenter iframe, .inforcenter embed {
@@ -1350,7 +1426,6 @@
 
 .inforcenter p {
   line-height: 30px;
-  color: #000;
   margin: 10px auto;
 }
 
@@ -1362,7 +1437,6 @@
   height: 30px;
   line-height: 30px;
   padding: 10px 0;
-  color: #000;
   font-size: 16px;
   font-weight: bold;
 }
@@ -1400,6 +1474,18 @@
 
 .inforcenter table tr:hover {
   background: #ebf7ff;
+}
+
+.inforcenter .a_link {
+  padding: 10px 0;
+}
+
+.inforcenter .a_link a {
+  color: #000;
+}
+
+.inforcenter .a_link a:hover {
+  color: #1280f3;
 }
 
 .noinforcenter {
@@ -1769,6 +1855,7 @@
   color: #6e6e6e;
   position: relative;
   cursor: pointer;
+  font-size: 15px;
   z-index: 1;
   border-radius: 5px 5px 0 0;
 }
@@ -1782,10 +1869,8 @@
   background: #fff3ec;
   border: 1px solid #ffd5be;
   border-bottom: none;
-}
-
-.schoollisnav .on a {
   color: #fe7830;
+  font-weight: bold;
 }
 
 .schoollist .ul li {
@@ -1976,7 +2061,7 @@
 }
 
 .schoollist .ul2 li .btname {
-  padding: 15px 0;
+  padding: 10px 0;
   line-height: 30px;
   width: 100%;
   overflow: hidden;
@@ -2104,8 +2189,11 @@
 }
 
 .schoollist .ul2 li .labinfor {
-  height: 100px;
+  min-height: 100px;
   padding: 20px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .schoollist .ul2 li .labinfor .img {
@@ -2118,6 +2206,9 @@
   float: left;
   width: 700px;
   padding-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .schoollist .ul2 li .labinfor .infor .btname {
@@ -2148,6 +2239,21 @@
 .schoollist .ul1 li .infor .ptop .name, .schoollist .ul1 li .infor .ptop .tis, .schoollist .ul1 li .infor .ptop .lab {
   padding: 0;
   margin-top: 0px;
+}
+
+.schoollist .link {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.schoollist .link a {
+  color: #13bf86;
+}
+
+.schoollist .link a:hover {
+  text-decoration: underline;
 }
 
 .competition {
@@ -2663,5 +2769,1288 @@
   width: 832px;
   height: 100px;
   margin: 0;
+}
+
+.commontpad20 {
+  padding: 20px 0;
+}
+
+.searchname {
+  padding: 10px 0 0;
+}
+
+.searchname .seartop {
+  height: 40px;
+  line-height: 38px;
+}
+
+.searchname .seartop .tishi {
+  float: left;
+  overflow: hidden;
+  font-size: 15px;
+  color: #666666;
+}
+
+.searchname .seartop .layui-form {
+  float: right;
+}
+
+.searchname .seartop .layui-form .layui-form-item .layui-input-inline {
+  width: 120px;
+}
+
+.searchname .lab_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.searchname .lab_box .img {
+  width: 95px;
+  margin: 0 12px;
+  height: 95px;
+  border-radius: 50%;
+  display: block;
+}
+
+.searchname .lab_box .infor {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  float: left;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+}
+
+.searchname .lab_box .infor .name {
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #0b72d9;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.searchname .lab_box .infor .name:hover {
+  text-decoration: underline;
+}
+
+.searchname .lab_box .lab {
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.searchname .lab_box .lab span {
+  float: left;
+  background: #fff1ea;
+  padding: 0 15px;
+  overflow: hidden;
+  color: #e49a72;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.searchname .lab_box .text {
+  padding-top: 10px;
+}
+
+.searchname .lab_box .text p {
+  line-height: 27px;
+  color: #999;
+}
+
+.searchname .lab_box .link {
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.searchname .lab_box .link a {
+  color: #13bf86;
+}
+
+.searchname .lab_box .link a:hover {
+  text-decoration: underline;
+}
+
+.housingname {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.housingname .namebox {
+  background: #12b3b3;
+  padding: 15px 20px 20px;
+}
+
+.housingname .namebox .name {
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  font-size: 30px;
+}
+
+.housingname .namebox p {
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+.housingname .lis {
+  padding: 10px 30px;
+  overflow: hidden;
+}
+
+.housingname .lis li {
+  height: 45px;
+  line-height: 45px;
+  float: left;
+  width: 29.3333%;
+  color: #666;
+  padding-right: 1%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.housingname .lis li a {
+  color: #fe7830;
+}
+
+.housingname .lis li a:hover {
+  text-decoration: underline;
+}
+
+.housingname .ul li {
+  float: left;
+  width: 513px;
+  border: 1px solid #cccccc;
+  height: 120px;
+  padding: 0 20px;
+  margin: 0 0 10px 30px;
+}
+
+.housingname .ul li .bt {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  color: #333333;
+  font-size: 20px;
+}
+
+.housingname .ul li .text {
+  height: 60px;
+  color: #ff6666;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.housingbox .tletle {
+  height: 50px;
+  line-height: 50px;
+}
+
+.housingbox .tletle .bt {
+  float: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+}
+
+.housinglis {
+  padding-bottom: 20px;
+}
+
+.housinglis .text_more {
+  position: relative;
+  padding: 10px 0 0;
+  color: #666;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.housinglis .text_more .morelink {
+  position: absolute;
+  right: 0px;
+  background: #fff;
+  width: 100px;
+  text-align: center;
+  color: #fe7830;
+  bottom: 0px;
+  cursor: pointer;
+}
+
+.housinglis iframe {
+  border: none;
+  overflow: hidden;
+  width: 100%;
+  height: 340px;
+  margin: 10px 0;
+}
+
+.manualtop {
+  margin-bottom: 20px;
+  height: 360px;
+  position: relative;
+}
+
+.manualtop .manualtop_L {
+  width: 280px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.manualtop .manualtop_L .bt {
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555555;
+  background: #e6e6e6;
+}
+
+.manualtop .manualtop_L .bt i {
+  height: 20px;
+  width: 19px;
+  background-position: -422px -123px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+}
+
+.manualtop .manualtop_L .scroll {
+  height: 270px;
+  margin: 10px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 290px;
+}
+
+.manualtop .manualtop_L .scroll .li {
+  height: 44px;
+  line-height: 44px;
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.manualtop .manualtop_L .scroll .li a {
+  color: #666666;
+}
+
+.manualtop .manualtop_L .scroll .li a:hover {
+  color: #fe7830;
+}
+
+.manualtop .manualtop_L .scroll .on {
+  font-weight: bold;
+}
+
+.manualtop .manualtop_L .scroll .on a {
+  color: #333;
+}
+
+.manualtop .manualtop_L .scroll .on a:hover {
+  color: #333;
+}
+
+.manualtop .manualtop_R {
+  width: 900px;
+  height: 360px;
+  position: relative;
+}
+
+.manualtop .manualtop_R .lunbox {
+  width: 100%;
+  height: 100%;
+}
+
+.manualtop .manualtop_R .lunbox:hover .icoimg {
+  display: block;
+}
+
+.manualtop .manualtop_R .lunbox .bd li {
+  width: 900px;
+  height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.manualtop .manualtop_R .lunbox .bd li:hover p {
+  color: #fe7830;
+}
+
+.manualtop .manualtop_R .lunbox .bd li .img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+}
+
+.manualtop .manualtop_R .lunbox .bd li p {
+  font-size: 16px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  line-height: 50px;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+  zoom: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.manualtop .manualtop_R .lunbox .bd li p span {
+  max-width: 600px;
+  padding: 0 10px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.manualtop .manualtop_R .lunbox .hd {
+  position: absolute;
+  height: 16px;
+  line-height: 16px;
+  right: 20px;
+  bottom: 15px;
+  text-align: center;
+}
+
+.manualtop .manualtop_R .lunbox .hd li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: -2px 7px 0;
+  background: #aeaeae;
+  overflow: hidden;
+  text-indent: 100em;
+  cursor: pointer;
+}
+
+.manualtop .manualtop_R .lunbox .hd .on {
+  background: #fe7830;
+}
+
+.manualtop .manualtop_R .lunbox .icoimg {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  display: none;
+  cursor: pointer;
+  height: 40px;
+  width: 25px;
+}
+
+.manualtop .manualtop_R .lunbox .prev {
+  left: 10px;
+  background-position: 0 -111px;
+}
+
+.manualtop .manualtop_R .lunbox .next {
+  right: 10px;
+  background-position: -45px -109px;
+}
+
+.manuallist {
+  padding: 0 30px;
+  margin-bottom: 20px;
+}
+
+.manuallist .manualbt {
+  height: 70px;
+  line-height: 70px;
+  color: #333;
+}
+
+.manuallist .manualbt .bt {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.manuallist .manualbt .bt span {
+  background: #e65050;
+  color: #fff;
+  padding: 0 2px;
+  margin-right: 2px;
+}
+
+.manuallist .manualbt .bt2 {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+
+.manuallist .manualbt .bt2::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -5px 7px 0 0;
+  width: 7px;
+  height: 20px;
+  background: #e65050;
+}
+
+.manuallist .manualbt.small {
+  height: 60px;
+  line-height: 60px;
+}
+
+.manuallist .ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.manuallist .ul1 {
+  width: 105%;
+}
+
+.manuallist .ul1 li {
+  width: 210px;
+  margin-right: 23px;
+  float: left;
+}
+
+.manuallist .ul2 {
+  width: 105%;
+}
+
+.manuallist .ul2 li {
+  width: 550px;
+  height: 300px;
+  background: #f7f7f7;
+  margin: 0 40px 20px 0;
+  overflow: hidden;
+  float: left;
+}
+
+.manuallist .ul2 li .manualitem {
+  float: left;
+}
+
+.manuallist .ul2 li .infor {
+  width: 290px;
+  float: left;
+  padding: 10px 0 0 25px;
+}
+
+.manuallist .ul2 li .infor .bt_ {
+  height: 52px;
+  line-height: 52px;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.manuallist .ul2 li .infor .bt_:hover {
+  color: #fe7830;
+}
+
+.manuallist .ul2 li .infor .p {
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  overflow: hidden;
+  color: #333;
+}
+
+.manuallist .ul2 li .infor .p span {
+  color: #666;
+}
+
+.manuallist .ul2 li .infor .p_tex {
+  line-height: 24px;
+  padding-top: 7px;
+  height: 120px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.manuallist_bq {
+  padding: 0;
+}
+
+.manuallist_bq .ul2 {
+  width: 100%;
+}
+
+.manuallist_bq .ul2 li {
+  width: 100%;
+  float: none;
+  background: #fff;
+  padding: 25px 0;
+  border-bottom: 1px solid #e9e9e9;
+  margin: 0;
+}
+
+.manuallist_bq .ul2 li .infor {
+  width: 600px;
+  height: 100%;
+  position: relative;
+}
+
+.manuallist_bq .ul2 li .infor .bqtex {
+  width: 100%;
+  height: 36px;
+  width: 100%;
+  line-height: 36px;
+  overflow: hidden;
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
+}
+
+.manuallist_bq .ul2 li .infor .bqtex .p {
+  float: left;
+  width: auto;
+  padding-right: 30px;
+}
+
+.manualitem {
+  width: 210px;
+  margin-bottom: 15px;
+}
+
+.manualitem .img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  position: relative;
+}
+
+.manualitem a.img > .motai:hover .tex {
+  color: #fe7830;
+}
+
+.manualitem .motai {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: url("../images/boxli.png") no-repeat center top;
+  width: 200px;
+  color: #fff;
+  text-align: center;
+  padding: 30px 5px 0;
+  height: 270px;
+}
+
+.manualitem .motai .yaer {
+  height: 34px;
+  width: 100%;
+  line-height: 34px;
+  overflow: hidden;
+  font-size: 24px;
+  display: block;
+}
+
+.manualitem .motai .bt {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  overflow: hidden;
+  font-size: 24px;
+  display: block;
+  color: #ff7271;
+}
+
+.manualitem .motai .bt2 {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  overflow: hidden;
+  font-size: 16px;
+  display: block;
+  padding-top: 40px;
+  font-weight: bold;
+  color: #e5e5e5;
+}
+
+.manualitem .motai .bt2 span {
+  padding: 0 5px;
+}
+
+.manualitem .motai .name {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  overflow: hidden;
+  font-size: 24px;
+  display: block;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.manualitem .motai .tex {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+  zoom: 1;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.manualitem .tile {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  color: #555555;
+}
+
+.manualitem .tile:hover {
+  color: #fe7830;
+}
+
+.manualbanner {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 20px;
+}
+
+.manualbanner .img {
+  height: 100%;
+}
+
+.manuallab .bt {
+  width: 100%;
+  background: #12b3b3;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.manuallab ul li {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.manuallab ul li .bt_a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.manuallab ul li a {
+  color: #666666;
+  cursor: pointer;
+}
+
+.manuallab ul li a:hover {
+  color: #fe7830;
+}
+
+.manuallab ul li .lis_box {
+  padding: 10px 20px;
+  background: #e6e6e6;
+  display: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.manuallab ul li .lis_box .list {
+  line-height: 36px;
+}
+
+.manuallab ul li .lis_box .list .bt_b {
+  display: block;
+  width: 100%;
+  height: 36px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.manuallab ul li .lis_box .list .lis {
+  padding: 0 0 0 20px;
+}
+
+.manuallab ul li .lis_box .list .lis a {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.manuallab ul li:last-child .bt_a {
+  border: none;
+}
+
+.manuallab ul .on .bt_a {
+  color: #333;
+}
+
+.manuallab ul .on .lis_box {
+  display: block;
+}
+
+.manualh1 {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.manualh1 .h1 {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #333333;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.manualtopbox {
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.manualtopbox .manualitem {
+  float: left;
+  width: 320px;
+  height: 430px;
+}
+
+.manualtopbox .manualitem .img {
+  height: 100%;
+}
+
+.manualtopbox .manualitem .motai {
+  width: 310px;
+  height: 400px;
+  background-size: 100% 100%;
+}
+
+.manualtopbox .manualitem .motai .yaer {
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.manualtopbox .manualitem .motai .bt {
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+.manualtopbox .manualitem .motai .name {
+  height: 80px;
+  line-height: 80px;
+  font-size: 36px;
+}
+
+.manualtopbox .manualitem .motai .bt2 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.manualtopbox .manualitem .motai .tex {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+.manualtopbox .Colle {
+  display: inline-block;
+  vertical-align: middle;
+  height: 35px;
+  line-height: 35px;
+  color: #000;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.manualtopbox .Colle .icoColle {
+  height: 18px;
+  width: 22px;
+  background-position: -371px 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 8px 0 0;
+}
+
+.manualtopbox .Colle.on .icoColle {
+  background-position: -339px 0;
+}
+
+.manualtopbox .infor {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.manualtopbox .infor .bdsharebuttonbox {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.manualtopbox .infor .bdsharebuttonbox .bt_ {
+  float: left;
+  padding: 0 5px;
+  color: #666;
+}
+
+.manualtopbox .infor .bth1 {
+  height: 90px;
+  line-height: 90px;
+  width: 100%;
+}
+
+.manualtopbox .infor .bth1 .h1 {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 400px;
+  font-weight: bold;
+  color: #0b72d9;
+  overflow: hidden;
+  height: 90px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 30px;
+}
+
+.manualtopbox .infor .bth1 a.h1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.manualtopbox .infor .text {
+  line-height: 30px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.manualtopbox .infor .text p {
+  padding-bottom: 5px;
+  color: #666;
+}
+
+.manualtopbox .infor .bq {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  overflow: hidden;
+  color: #333;
+}
+
+.manualtopbox .infor .bq p {
+  float: left;
+  padding-right: 30px;
+}
+
+.manualtopbox .infor .bq span {
+  color: #666;
+}
+
+.manualcatalog {
+  padding: 20px 30px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.manualcatalog .bttile {
+  height: calc(100% - 40px);
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  width: 30px;
+  padding: 0 15px;
+  color: #12b3b3;
+  line-height: 70px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+
+.manualcatalog .list {
+  overflow: hidden;
+  padding-left: 60px;
+  max-width: 1080px;
+}
+
+.manualcatalog .list .item {
+  float: left;
+  width: 22%;
+  padding-left: 3%;
+  overflow: hidden;
+}
+
+.manualcatalog .list .item .bt {
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  overflow: hidden;
+  color: #333;
+}
+
+.manualcatalog .list .item li {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.manualcatalog .list .item li::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #7acccc;
+  margin: -2px 5px 0 0;
+}
+
+.manualcatalog .list .item li a {
+  color: #555;
+}
+
+.manualcatalog .list .item li a:hover {
+  color: #fe7830;
+  text-decoration: underline;
+}
+
+.manualinfortext {
+  color: #333;
+  font-size: 14px;
+}
+
+.manualinfortext h3 {
+  background: #f7f7f7;
+  height: 40px;
+  line-height: 40px;
+  color: #12b3b3;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.manualinfortext h3::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 5px;
+  background: #12b3b3;
+  margin: -2px 10px 0 0;
+}
+
+.bqtopbox {
+  margin: 0 0 20px;
+}
+
+.bqtopic {
+  padding: 20px 0;
+}
+
+.bqtopic ul li {
+  height: 40px;
+  line-height: 40px;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #999;
+}
+
+.bqtopic ul li span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -1px 10px 0 0;
+  overflow: hidden;
+}
+
+.bqtopic ul li a:hover {
+  color: #fe7830;
+  text-decoration: underline;
+}
+
+.bqtopic ul li a:hover .bt {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.bqtopic ul li a:hover .bq {
+  color: #fe7830;
+  text-decoration: underline;
+}
+
+.bqtopic ul li .bq {
+  width: 110px;
+  color: #999;
+}
+
+.bqtopic ul li .bt {
+  max-width: 350px;
+}
+
+.bqtopic ul li .time {
+  width: 50px;
+  float: right;
+}
+
+.bqtopic ul li .name {
+  float: right;
+  width: 80px;
+  text-align: center;
+}
+
+.singlebqbox .Cont_L {
+  padding: 0 20px;
+  width: 860px;
+}
+
+.singlebq {
+  padding: 20px 0;
+}
+
+.singlebq .singlef {
+  width: 120px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.singlebq .singlef .bt {
+  background: #f7f7f7;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #555555;
+  text-align: center;
+}
+
+.singlebq .singlef .bt i {
+  height: 20px;
+  width: 19px;
+  background-position: -422px -123px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+}
+
+.singlebq .singlef ul {
+  padding: 10px 0;
+  border: 1px solid #eee;
+}
+
+.singlebq .singlef ul li {
+  width: 100%;
+  overflow: hidden;
+  height: 36px;
+  color: #666;
+  line-height: 36px;
+}
+
+.singlebq .singlef ul li a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  color: #666;
+}
+
+.singlebq .singlef ul li:hover {
+  background: #fe7830;
+  color: #fff;
+}
+
+.singlebq .singlef ul li:hover a {
+  color: #fff;
+}
+
+.singlebq .singlef ul .on {
+  background: #fe7830;
+  color: #fff;
+}
+
+.singlebq .singlef ul .on a {
+  color: #fff;
+}
+
+.singlebq .singlef ul .active {
+  color: #333;
+  font-weight: bold;
+}
+
+.singlebq .singlef ul .active:hover {
+  background: none;
+  color: #fe7830;
+}
+
+.singlebq .singlef ul .active:hover a {
+  color: #fe7830;
+}
+
+.singlebq .singlef ul .active a {
+  color: #333;
+}
+
+.singlebq .singrit {
+  width: 700px;
+  padding-right: 10px;
+}
+
+.singlebq .singrit .bth1 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.singlebq .singrit .btbox {
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.singlebq .singrit .btbox .bt {
+  color: #12b2b2;
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+}
+
+.singlebq .singrit .btbox .bt::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 10px 0 0;
+  background: #12b2b2;
+  width: 3px;
+  height: 15px;
+}
+
+.singlebq .singrit .btbox .more {
+  float: right;
+}
+
+.singlebq .singrit .btbox .more a {
+  color: #999;
+  margin-left: 10px;
+}
+
+.singlebq .singrit .btbox .more a:hover {
+  color: #fe7830;
+}
+
+.singlebq .singrit .btbox .more .on {
+  color: #fe7830;
+  font-weight: bold;
+}
+
+.singlebq .singrit .ul {
+  padding: 5px 0;
+}
+
+.singlebq .singrit .ul li {
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.singlebq .singrit .ul li a {
+  color: #333;
+}
+
+.singlebq .singrit .ul li a:hover {
+  color: #fe7830;
+  text-decoration: underline;
+}
+
+.singlebq .singrit .ul li .tex {
+  display: block;
+  float: left;
+  max-width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.singlebq .singrit .ul li .time {
+  color: #999;
+  float: right;
 }
 /*# sourceMappingURL=common.css.map */
